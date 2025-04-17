@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#secao1">Home</a></li>
+        <li><a href="#secao2">Cardápio</a></li>
+        <li><a href="#secao3">Sobre nós</a></li>
+        <li><a href="#secao4">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ 
+  <section id="secao1">
+    <div class="imagemPizza">
+      <img src="pizza.jpg" alt="pizza" />
+      <div class="texto-sobre-imagem">
+        <h1>Bem-vindo à Alessio's</h1>
+        <p>Saborosas pizzas feitas especialmente para você!</p>
+        <a href="#secao2">
+            <button>Ver Cardápio</button>
+          </a>
+          
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="secao2">
+    <h2>Cardápio</h2>
+  
+      <div class="card">
+        <img src="pizza1.png" alt="Pizza Margherita" />
+        <h3>Pizza Margherita</h3>
+        <p>Uma clássica pizza com molho de tomate, mozzarella e manjericão fresco.</p>
+      </div>
+      <div class="card">
+        <img src="pizza2.png" alt="Pizza Pepperoni" />
+        <h3>Pizza Pepperoni</h3>
+        <p>Pizza com pepperoni, queijo e molho especial.</p>
+      </div>
+      <div class="card">
+        <img src="pizza3.png" alt="Pizza Veggie" />
+        <h3>Pizza Veggie</h3>
+        <p>Pizza cheia de legumes frescos, como pimentões, cebolas e azeitonas.</p>
+      </div>
+      <div class="card">
+        <img src="pizza4.png" alt="Pizza Quatro Queijos" />
+        <h3>Pizza Quatro Queijos</h3>
+        <p>Uma mistura deliciosa de queijos: mozzarella, gorgonzola, parmesão e queijo de cabra.</p>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section id="secao3">
+    <div class="imagemSobre">
+        <div class="imagemSobre">
+      <img src="pizzaSobre.png" alt="Sobre nós" />
+      <div class="texto-sobre-imagemSobre">
+        <h1>Sobre nós</h1>
+        <p>Nossa pizzaria oferece o melhor pra voce</p>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="secao4">
+    <h2>Contato</h2>
+    
+    <div class="contact-info">
+        <p>Entre em contato conosco para fazer pedidos ou tirar suas dúvidas.</p>
+        
+        <p><strong>Endereço:</strong> Avenida Onze de Outubro, nº 123<br>
+        Centro, Cidade Qualquer/RJ CEP: 12345-678</p>
+        
+        <p><strong>Telefone:</strong> (11) 5555-5555</p>
+        <p><strong>E-mail:</strong> contacto@alesstos.przca</p>
+    </div>
+    
+    <div class="opening-hours">
+        <strong>Horário de Funcionamento:</strong>
+        <p>Segunda a Sábado: 11h00 às 23h00<br>
+        Domingo: 16h00 às 23h00</p>
+    </div>
+
+    <h3>Envie Sua Mensagem</h3>
+  
+    <form action="enviarMensagem.php" method="POST">
+      <div>
+        <label for="nome">Seu Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+      </div>
+  
+      <div>
+        <label for="telefone">Seu Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required />
+      </div>
+  
+      <div>
+        <label for="assunto">Assunto:</label>
+        <select id="assunto" name="assunto" required>
+          <option value="pedido">Pedido</option>
+          <option value="duvida">Dúvida sobre o cardápio</option>
+          <option value="comentario">Comentário</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+  
+      <div>
+        <label for="mensagem">Sua Mensagem:</label>
+        <textarea
+          id="mensagem"
+          name="mensagem"
+          placeholder="Escreva sua mensagem aqui..."
+          rows="4"
+          required
+        ></textarea>
+      </div>
+  
+      <div>
+        <label for="forma-contato">Como prefere ser contatado?</label>
+        <select id="forma-contato" name="forma-contato" required>
+          <option value="whatsapp">WhatsApp</option>
+          <option value="telefone">Telefone</option>
+        </select>
+      </div>
+  
+      <div>
+        <button type="submit">Enviar Mensagem</button>
+      </div>
+    </form>
+  </section>
+  
+  <footer>
+    <div class="footer-content">
+      <p>© 2024 Alessio’s Pizzeria</p>
+    </div>
+  </footer>
+</body>
+</html>
