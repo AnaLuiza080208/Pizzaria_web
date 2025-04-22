@@ -1,308 +1,308 @@
-
 body {
-    font-family: 'Poppins', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
-    line-height: 1.6;
-  }
+  font-family: "Marcellus";
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
 
-  header {
-    background-color: #222;
-    padding: 1.5rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    margin: 0 1.5rem;
-  }
-  
-  nav ul li a {
-    color: #ff5c10;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-    position: relative;
-    padding: 0.5rem 0;
-  }
-  
-  nav ul li a:hover {
-    color: #ff5e01;
-  }
-  
-  nav ul li a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #ff5e01;
-    transition: width 0.3s ease;
-  }
-  
-  nav ul li a:hover::after {
-    width: 100%;
-  }
-  
+header {
+  background-color: #222;
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-  #secao1 {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  .imagemPizza img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .texto-sobre-imagem {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    width: 90%;
-    max-width: 800px;
-  }
-  
-  .texto-sobre-imagem h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    animation: fadeInDown 1s ease;
-  }
-  
-  .texto-sobre-imagem p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-    animation: fadeInUp 1s ease;
-  }
-  
-  .texto-sobre-imagem button {
-    background-color: #ff5e01;
-    color: rgb(0, 0, 0);
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    animation: fadeIn 1.5s ease;
-  }
-  
-  .texto-sobre-imagem button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
-  
-  .pizza {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 3rem;
-  }
-  
- 
-  #secao2 {
-    padding: 5rem 2rem;
-    background-color: #fff;
-  }
-  
-  #secao2 h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: #222;
-    position: relative;
-  }
-  
-  #secao2 h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 3px;
-    background-color: #ff6b6b;
-  }
-  
-  .cardapio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
 
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-  }
-  
-  .card img {
-    width: 60%;
-    height: 300px;
-    object-fit: cover;
-    max-width: 100%;
-    margin: 10px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    display: block;
-  }
-  
-  .card {
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
+nav ul li {
+  margin: 0 1.5rem;
+}
 
-  .card h3 {
-    margin: 1rem 0 0.3rem;
-    width: 100%;
+nav ul li a {
+  color: #ffe55c;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+nav ul li a:hover {
+  color: #ffe55c;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffe55c;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+#secao1 {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagemPizza {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagemPizza img {
+  width: 1000px;
+  height: 1000px;
+  max-width: 500%;
+  max-height: 500%;
+}
+.texto-sobre-imagem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 90%;
+  max-width: 800px;
+}
+
+.texto-sobre-imagem h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: fadeInDown 1s ease;
+  font-family: "Marcellus";
+}
+
+.texto-sobre-imagem p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 1s ease;
+  font-family: "Marcellus";
+}
+
+.texto-sobre-imagem button {
+  background-color: #ffe55c;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: fadeIn 1.5s ease;
+  font-family: "Marcellus";
+}
+
+.texto-sobre-imagem button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Marcellus";
+}
+
+.pizza {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+#secao2 {
+  padding: 5rem 2rem;
+  background-color: #fff;
+}
+
+#secao2 h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #222;
+  position: relative;
+}
+
+#secao2 h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+}
+
+.cardapio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 60%;
+  height: 300px;
+  object-fit: cover;
+  max-width: 100%;
+  margin: 10px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.card h3 {
+  margin: 1rem 0 0.3rem;
+  width: 100%;
 }
 
 .card p {
-    padding: 0;
-    width: 50%;
-    text-align: center;
-    box-sizing: border-box;
+  padding: 0;
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .card h3,
 .card p {
-    padding-left: 0px;
-    padding-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-  
 
-  #secao3 {
-    position: relative;
-    height: 60vh;
-    overflow: hidden;
-  }
-  
-  .imagemSobre img {
-    width: 90%;
-    height: 300px;
-    object-fit: cover;
-    max-width: 100%;
-    margin: 10px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    display: block;
-    
+#secao3 {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
 }
-  
-  .texto-sobre-imagemSobre {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    width: 90%;
-  }
-  
-  .texto-sobre-imagemSobre h1 {
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  }
-  #secao4 {
-    padding: 5rem 2rem;
-    background-color: #fff;
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
+
+.imagemSobre img {
+  width: 90%;
+  height: 300px;
+  object-fit: cover;
+  max-width: 100%;
+  margin: 10px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
+.texto-sobre-imagemSobre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 90%;
+}
+
+.texto-sobre-imagemSobre h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#secao4 {
+  padding: 5rem 2rem;
+  background-color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Marcellus', serif;
 }
 
 #secao4 h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: #222;
-    position: relative;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #222;
 }
 
-#secao4 h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 3px;
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
 
 .contact-info {
-    background-color: #f9f9f9;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-bottom: 2rem;
-    text-align: center;
+  grid-column: 1 / -1; 
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-.contact-info p, .opening-hours p {
-    margin: 0 0 1rem 0;
-    line-height: 1.8;
-    color: #555;
+.contact-item {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.contact-info p:last-child, .opening-hours p:last-child {
-    margin-bottom: 0;
+
+.contact-item.full-width {
+  grid-column: 1 / -1;
 }
 
-.contact-info strong, .opening-hours strong {
-    color: #222;
-    font-weight: 600;
-    display: inline-block;
-    min-width: 180px;
+.contact-item strong {
+  display: block;
+  color: #ff5e01;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.contact-item p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
 }
 
-.opening-hours p {
-    margin-bottom: 0.5rem;
+.contact-item p:last-child {
+  margin-bottom: 0;
 }
-
-.opening-hours br {
-    display: none;
-}
-
-.opening-hours p:last-child {
-    margin-top: 0.5rem;
-}
-
 .footer-content {
   background-color: #222;
   text-align: center;
   color: white;
   height: 40px;
-  padding: 5px ;
-  border-top: 1px solid #444; 
+  padding: 5px;
+  border-top: 1px solid #444;
 }
