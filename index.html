@@ -23,6 +23,7 @@
  
   <section id="secao1">
     <div class="imagemPizza">
+     
       <img src="pizza.jpg" alt="pizza" />
       <div class="texto-sobre-imagem">
         <h1>Bem-vindo à Alessio's</h1>
@@ -39,6 +40,7 @@
   <section id="secao2">
     <h2>Cardápio</h2>
   
+    <div class="pizza">
       <div class="card">
         <img src="pizza1.png" alt="Pizza Margherita" />
         <h3>Pizza Margherita</h3>
@@ -69,9 +71,10 @@
       <img src="pizzaSobre.png" alt="Sobre nós" />
       <div class="texto-sobre-imagemSobre">
         <h1>Sobre nós</h1>
-        <p>Nossa pizzaria oferece o melhor pra voce</p>
+        <p>Nossa pizzaria é dedicada a criar as melhores pizzas do mundo, com ingredientes frescos e receitas exclusivas</p>
       </div>
     </div>
+  </nav>
   </section>
 
  
@@ -82,65 +85,18 @@
         <p>Entre em contato conosco para fazer pedidos ou tirar suas dúvidas.</p>
         
         <p><strong>Endereço:</strong> Avenida Onze de Outubro, nº 123<br>
-        Centro, Cidade Qualquer/RJ CEP: 12345-678</p>
+        Centro, Cidade Qualquer/RL CEP: 12345-678</p>
         
-        <p><strong>Telefone:</strong> (11) 5555-5555</p>
-        <p><strong>E-mail:</strong> contacto@alesstos.przca</p>
+        <p class="contato"strong>Telefone:</strong> (11) 5555-5555
+        <strong>E-mail:</strong> contacto@alesstos.pizza</p>
     </div>
     
     <div class="opening-hours">
-        <strong>Horário de Funcionamento:</strong>
-        <p>Segunda a Sábado: 11h00 às 23h00<br>
+        <p><strong>Horário de Funcionamento:</strong><br>
+        Segunda a Sábado: 11h00 às 23h00<br>
         Domingo: 16h00 às 23h00</p>
     </div>
-
-    <h3>Envie Sua Mensagem</h3>
-  
-    <form action="enviarMensagem.php" method="POST">
-      <div>
-        <label for="nome">Seu Nome:</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
-      </div>
-  
-      <div>
-        <label for="telefone">Seu Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required />
-      </div>
-  
-      <div>
-        <label for="assunto">Assunto:</label>
-        <select id="assunto" name="assunto" required>
-          <option value="pedido">Pedido</option>
-          <option value="duvida">Dúvida sobre o cardápio</option>
-          <option value="comentario">Comentário</option>
-          <option value="outro">Outro</option>
-        </select>
-      </div>
-  
-      <div>
-        <label for="mensagem">Sua Mensagem:</label>
-        <textarea
-          id="mensagem"
-          name="mensagem"
-          placeholder="Escreva sua mensagem aqui..."
-          rows="4"
-          required
-        ></textarea>
-      </div>
-  
-      <div>
-        <label for="forma-contato">Como prefere ser contatado?</label>
-        <select id="forma-contato" name="forma-contato" required>
-          <option value="whatsapp">WhatsApp</option>
-          <option value="telefone">Telefone</option>
-        </select>
-      </div>
-  
-      <div>
-        <button type="submit">Enviar Mensagem</button>
-      </div>
-    </form>
-  </section>
+</section>
   
   <footer>
     <div class="footer-content">
