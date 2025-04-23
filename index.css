@@ -75,9 +75,9 @@ nav ul li a:hover::after {
 }
 
 .imagemPizza img {
-  width: 1000px;
+  width: 90%;
   height: 1000px;
-  max-width: 500%;
+  max-width: 800%;
   max-height: 500%;
 }
 .texto-sobre-imagem {
@@ -289,6 +289,13 @@ nav ul li a:hover::after {
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
 }
+
+.contact-item p strong.email-destaque {
+  color: #000000; 
+  font-weight: bold;
+  display: inline; 
+}
+
 .contact-item p {
   margin: 0.5rem 0;
   font-size: 1rem;
@@ -305,4 +312,8 @@ nav ul li a:hover::after {
   height: 40px;
   padding: 5px;
   border-top: 1px solid #444;
+  max-width: 800px; 
+  margin: 0 auto; 
+  width: 90%;
+  max-width: 800%;
 }
