@@ -80,6 +80,7 @@ nav ul li a:hover::after {
   max-width: 800%;
   max-height: 500%;
 }
+
 .texto-sobre-imagem {
   position: absolute;
   top: 50%;
@@ -219,7 +220,7 @@ nav ul li a:hover::after {
 
 .imagemSobre img {
   width: 90%;
-  height: 300px;
+  height: 500px;
   object-fit: cover;
   max-width: 100%;
   margin: 10px auto;
@@ -277,7 +278,6 @@ nav ul li a:hover::after {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-
 .contact-item.full-width {
   grid-column: 1 / -1;
 }
@@ -305,6 +305,7 @@ nav ul li a:hover::after {
 .contact-item p:last-child {
   margin-bottom: 0;
 }
+
 .footer-content {
   background-color: #222;
   text-align: center;
@@ -316,4 +317,117 @@ nav ul li a:hover::after {
   margin: 0 auto; 
   width: 90%;
   max-width: 800%;
+}
+
+#secao4 form {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#secao4 form div {
+  margin-bottom: 2rem;
+}
+
+#secao4 label {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  color: #222;
+  font-size: 1.1rem;
+}
+
+#secao4 input[type="text"],
+#secao4 select,
+#secao4 textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #f0f0f0;
+  border-radius: 8px;
+  font-family: "Marcellus", serif;
+  font-size: 1.05rem;
+  background-color: #fafafa;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+#secao4 input[type="text"]:hover,
+#secao4 select:hover,
+#secao4 textarea:hover {
+  border-color: #3498db;
+}
+
+#secao4 input[type="text"]:focus,
+#secao4 select:focus,
+#secao4 textarea:focus {
+  border-color: #2980b9; 
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+#secao4 textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+#secao4 button[type="submit"] {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Marcellus", serif;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#secao4 button[type="submit"]:hover {
+  background-color: #2980b9; 
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(41, 128, 185, 0.4);
+}
+
+
+#secao4 table {
+  width: 100%;
+  margin: 1rem 0;
+  border-collapse: collapse;
+  background-color: #fafafa;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#secao4 table td {
+  padding: 0.8rem;
+  border: 1px solid #f0f0f0;
+}
+
+#secao4 table tr:first-child td {
+  background-color: #3498db; 
+  color: #fff; 
+  font-weight: 600;
+}
+
+
+#secao4 h2 {
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+  color: #222;
+  position: relative;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+#secao4 h2::after {
+  content: none; 
 }
