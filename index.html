@@ -64,56 +64,54 @@
     </div>
   </section>
   
-
+  
   <section id="secao3">
     <div class="imagemSobre">
-        <div class="imagemSobre">
-      <img src="pizzaSobre.png" alt="Sobre nós" />
+      <img src="pizzaSobre.png" alt="Pizza de fundo" class="background-image">
       <div class="texto-sobre-imagemSobre">
-        <h1>Sobre nós</h1>
+        <h2>Sobre nós</h2>
         <p>Nossa pizzaria é dedicada a criar as melhores pizzas do mundo, com ingredientes frescos e receitas exclusivas</p>
       
-        <h3>Envie Sua Sugestão de Pizza</h3>
-        <form>
-            <div>
-                <label for="nome">Tipo de Pizza:</label>
-                <select id="assunto" name="assunto">
-                    <option value="doce">Pizza doce</option>
-                    <option value="salgado">Pizza salgada</option>
-                    <!-- <option value="colaborar">Quero colaborar</option>
-                    <option value="outro">Outro</option> -->
-                </select>
+        <div class="suggestion-form">
+          <h3>Envie Sua Sugestão de Pizza</h3>
+          <form>
+            <div class="form-group">
+              <label for="assunto">Tipo de Pizza:</label>
+              <select id="assunto" name="assunto">
+                <option value="doce">Pizza doce</option>
+                <option value="salgado">Pizza salgada</option>
+              </select>
             </div>
         
-            <div>
-                <label for="descricao">Descrição da Pizza:</label>
-                <input type="text" id="descricao" name="descricao">
+            <div class="form-group">
+              <label for="descricao">Descrição da Pizza:</label>
+              <input type="text" id="descricao" name="descricao">
             </div>
         
-            <div>
-                <label for="ingredientes">Ingredientes obrigatórios:</label>
-                <input type="text" id="ingredientes" name="ingredientes" placeholder="Ex: Queijo, Massa, Molho">
+            <div class="form-group">
+              <label for="ingredientes">Ingredientes obrigatórios:</label>
+              <input type="text" id="ingredientes" name="ingredientes" placeholder="Ex: Queijo, Massa, Molho">
             </div>
         
-            <div>
-                <label for="valor">Valor sugerido:</label>
-                <input type="text" id="valor" name="valor" placeholder="Ex: R$ 39,90">
+            <div class="form-group">
+              <label for="valor">Valor sugerido:</label>
+              <input type="text" id="valor" name="valor" placeholder="Ex: R$ 39,90">
             </div>
         
-            <div>
-                <label for="mensagem">Sua Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..." rows="4"></textarea>
+            <div class="form-group">
+              <label for="mensagem">Sua Mensagem:</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..." rows="4"></textarea>
             </div>
         
-            <div>
-              <button type="submit">Enviar Mensagem</button>
+            <div class="form-submit">
+              <button type="submit" class="submit-btn">Enviar Mensagem</button>
             </div>
-        </form>
-        
+          </form>
+        </div>
       </div>
     </div>
-  </nav>
   </section>
+
   <section id="secao4">
     <h2>Contato</h2>
     
