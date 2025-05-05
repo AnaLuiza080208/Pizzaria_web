@@ -1,153 +1,192 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Landing Page</title>
-  <script src="https://unpkg.com/feather-icons"></script>
-  <link rel="stylesheet" href="index.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#secao1">Home</a></li>
-        <li><a href="#secao2">Cardápio</a></li>
-        <li><a href="#secao3">Sobre nós</a></li>
-        <li><a href="#secao4">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#secao1">Home</a></li>
+          <li><a href="#secao2">Cardápio</a></li>
+          <li><a href="#secao3">Sobre nós</a></li>
+          <li><a href="#secao4">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
- 
-  <section id="secao1">
-    <div class="imagemPizza">
-     
-      <img src="pizza.jpg" alt="pizza" />
-      <div class="texto-sobre-imagem">
-        <h1>Bem-vindo à Alessio's</h1>
-        <p>Saborosas pizzas feitas especialmente para você!</p>
-        <a href="#secao2">
+    <section id="secao1">
+      <div class="imagemPizza">
+        <img src="pizza.jpg" alt="pizza" />
+        <div class="texto-sobre-imagem">
+          <h1>Bem-vindo à Alessio's</h1>
+          <p>Saborosas pizzas feitas especialmente para você!</p>
+          <a href="#secao2">
             <button>Ver Cardápio</button>
           </a>
-          
-      </div>
-    </div>
-  </section>
-
- 
-  <section id="secao2">
-    <h2>Cardápio</h2>
-  
-    <div class="pizza">
-      <div class="card">
-        <img src="pizza1.png" alt="Pizza Margherita" />
-        <h3>Pizza Margherita</h3>
-        <p>Uma clássica pizza com molho de tomate, mozzarella e manjericão fresco.</p>
-      </div>
-      <div class="card">
-        <img src="pizza2.png" alt="Pizza Pepperoni" />
-        <h3>Pizza Pepperoni</h3>
-        <p>Pizza com pepperoni, queijo e molho especial.</p>
-      </div>
-      <div class="card">
-        <img src="pizza3.png" alt="Pizza Veggie" />
-        <h3>Pizza Veggie</h3>
-        <p>Pizza cheia de legumes frescos, como pimentões, cebolas e azeitonas.</p>
-      </div>
-      <div class="card">
-        <img src="pizza4.png" alt="Pizza Quatro Queijos" />
-        <h3>Pizza Quatro Queijos</h3>
-        <p>Uma mistura deliciosa de queijos: mozzarella, gorgonzola, parmesão e queijo de cabra.</p>
-      </div>
-    </div>
-  </section>
-  
-  
-  <section id="secao3">
-    <div class="imagemSobre">
-      <img src="pizzaSobre.png" alt="Pizza de fundo" class="background-image">
-      <div class="texto-sobre-imagemSobre">
-        <h2>Sobre nós</h2>
-        <p>Nossa pizzaria é dedicada a criar as melhores pizzas do mundo, com ingredientes frescos e receitas exclusivas</p>
-      
-        <div class="suggestion-form">
-          <h3>Envie Sua Sugestão de Pizza</h3>
-          <form>
-            <div class="form-group">
-              <label for="assunto">Tipo de Pizza:</label>
-              <select id="assunto" name="assunto">
-                <option value="doce">Pizza doce</option>
-                <option value="salgado">Pizza salgada</option>
-              </select>
-            </div>
-        
-            <div class="form-group">
-              <label for="descricao">Descrição da Pizza:</label>
-              <input type="text" id="descricao" name="descricao">
-            </div>
-        
-            <div class="form-group">
-              <label for="ingredientes">Ingredientes obrigatórios:</label>
-              <input type="text" id="ingredientes" name="ingredientes" placeholder="Ex: Queijo, Massa, Molho">
-            </div>
-        
-            <div class="form-group">
-              <label for="valor">Valor sugerido:</label>
-              <input type="text" id="valor" name="valor" placeholder="Ex: R$ 39,90">
-            </div>
-        
-            <div class="form-group">
-              <label for="mensagem">Sua Mensagem:</label>
-              <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..." rows="4"></textarea>
-            </div>
-        
-            <div class="form-submit">
-              <button type="submit" class="submit-btn">Enviar Mensagem</button>
-            </div>
-          </form>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="secao4">
-    <h2>Contato</h2>
-    
-    <div class="contact-container">
+    <section id="secao2">
+      <h2>Cardápio</h2>
+
+      <div class="pizza">
+        <div class="card">
+          <img src="pizza1.png" alt="Pizza Margherita" />
+          <h3>Pizza Margherita</h3>
+          <p>
+            Uma clássica pizza com molho de tomate, mozzarella e manjericão
+            fresco.
+          </p>
+        </div>
+        <div class="card">
+          <img src="pizza2.png" alt="Pizza Pepperoni" />
+          <h3>Pizza Pepperoni</h3>
+          <p>Pizza com pepperoni, queijo e molho especial.</p>
+        </div>
+        <div class="card">
+          <img src="pizza3.png" alt="Pizza Veggie" />
+          <h3>Pizza Veggie</h3>
+          <p>
+            Pizza cheia de legumes frescos, como pimentões, cebolas e azeitonas.
+          </p>
+        </div>
+        <div class="card">
+          <img src="pizza4.png" alt="Pizza Quatro Queijos" />
+          <h3>Pizza Quatro Queijos</h3>
+          <p>
+            Uma mistura deliciosa de queijos: mozzarella, gorgonzola, parmesão e
+            queijo de cabra.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="secao3">
+      <div class="imagemSobre">
+        <img
+          src="pizzaSobre.png"
+          alt="Pizza de fundo"
+          class="background-image"
+        />
+        <div class="texto-sobre-imagemSobre">
+          <h2>Sobre nós</h2>
+          <p>
+            Nossa pizzaria é dedicada a criar as melhores pizzas do mundo, com
+            ingredientes frescos e receitas exclusivas
+          </p>
+
+          <div class="suggestion-form">
+            <h3>Envie Sua Sugestão de Pizza</h3>
+            <form>
+              <div class="form-group">
+                <label for="assunto">Tipo de Pizza:</label>
+                <select id="assunto" name="assunto">
+                  <option value="doce">Pizza doce</option>
+                  <option value="salgado">Pizza salgada</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="descricao">Descrição da Pizza:</label>
+                <input type="text" id="descricao" name="descricao" />
+              </div>
+              <div class="form-group">
+                <label for="ingredientes">Ingredientes obrigatórios:</label>
+                <select id="ingredientes" name="ingredientes" required>
+                  <option value="">-- Selecione um ingrediente --</option>
+                  <option value="massa">Massa</option>
+                  <option value="molho-tomate">Molho de tomate</option>
+                  <option value="queijo-mussarela">Queijo muçarela</option>
+                  <option value="orégano">Orégano</option>
+                  <option value="chocolate">Chocolate</option>
+                  <option value="leite-condensado">Leite condensado</option>
+                  <option value="morango">Morango</option>
+                  <option value="banana">Banana</option>
+                  <option value="canela">Canela</option>
+                  <option value="coco-ralado">Coco ralado</option>
+                </select>
+              </div>
+              
+
+              <div class="form-group">
+                <label for="valor">Valor sugerido:</label>
+                <input
+                  type="text"
+                  id="valor"
+                  name="valor"
+                  placeholder="Ex: R$ 39,90"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem">Sua Mensagem:</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  placeholder="Escreva sua mensagem aqui..."
+                  rows="4"
+                ></textarea>
+              </div>
+
+              <div class="form-submit">
+                <button type="submit" class="submit-btn">
+                  Enviar Mensagem
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="secao4">
+      <h2>Contato</h2>
+
+      <div class="contact-container">
         <div class="contact-info">
-            <p>Entre em contato conosco para fazer pedidos ou tirar suas dúvidas.</p>
+          <p>
+            Entre em contato conosco para fazer pedidos ou tirar suas dúvidas.
+          </p>
         </div>
-        
-      
+
         <div class="contact-item">
-            <strong>Endereço:</strong>
-            <p>Avenida Onze de Outubro, nº 123<br>
-            Centro, Cidade Qualquer/RJ<br>
-            CEP: 12345-678</p>
+          <strong>Endereço:</strong>
+          <p>
+            Avenida Onze de Outubro, nº 123<br />
+            Centro, Cidade Qualquer/RJ<br />
+            CEP: 12345-678
+          </p>
         </div>
-        
+
         <div class="contact-item">
           <strong>Telefone:</strong>
           <p>(11) 5555-5555</p>
-          
+
           <strong>E-mail:</strong>
           <p><strong class="email-destaque">contacto@alessios.pizza</strong></p>
-      </div>
+        </div>
 
         <div class="contact-item full-width">
-            <strong>Horário de Funcionamento:</strong>
-            <p>Segunda a Sábado: 11h00 às 23h00<br>
-            Domingo: 16h00 às 23h00</p>
+          <strong>Horário de Funcionamento:</strong>
+          <p>
+            Segunda a Sábado: 11h00 às 23h00<br />
+            Domingo: 16h00 às 23h00
+          </p>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-  <footer>
-    <div class="footer-content">
-      <p>© 2024 Alessio’s Pizzeria</p>
-    </div>
-  </footer>
-</body>
+    <footer>
+      <div class="footer-content">
+        <p>© 2024 Alessio’s Pizzeria</p>
+      </div>
+    </footer>
+  </body>
 </html>
