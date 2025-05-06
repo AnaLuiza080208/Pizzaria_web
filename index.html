@@ -98,33 +98,30 @@
                 <input type="text" id="descricao" name="descricao" />
               </div>
               <div class="form-group">
-                <label for="ingredientes">Ingredientes obrigatórios:</label>
-                <select id="ingredientes" name="ingredientes" required>
-                  <option value="">-- Selecione um ingrediente --</option>
-                  <option value="massa">Massa</option>
-                  <option value="molho-tomate">Molho de tomate</option>
-                  <option value="queijo-mussarela">Queijo muçarela</option>
-                  <option value="orégano">Orégano</option>
-                  <option value="chocolate">Chocolate</option>
-                  <option value="leite-condensado">Leite condensado</option>
-                  <option value="morango">Morango</option>
-                  <option value="banana">Banana</option>
-                  <option value="canela">Canela</option>
-                  <option value="coco-ralado">Coco ralado</option>
-                </select>
-              </div>
+                <label>Ingredientes obrigatórios:</label>
               
+                <div class="checkbox-group">
+                  <label><input type="checkbox" name="ingredientes[]" value="molho-tomate"> Molho de tomate</label>
+                  <label><input type="checkbox" name="ingredientes[]" value="queijo-mussarela"> Queijo muçarela</label>
+                  <label><input type="checkbox" name="ingredientes[]" value="chocolate"> Chocolate</label>
+                  <label><input type="checkbox" name="ingredientes[]" value="leite-condensado"> Leite condensado</label>
+                  <label><input type="checkbox" name="ingredientes[]" value="morango"> Morango</label>
+                  <label><input type="checkbox" name="ingredientes[]" value="banana"> Banana</label>
+                </div>
+              </div>
 
               <div class="form-group">
                 <label for="valor">Valor sugerido:</label>
                 <input
-                  type="text"
+                  type="number"
                   id="valor"
                   name="valor"
-                  placeholder="Ex: R$ 39,90"
+                  placeholder="Ex: 39.90"
+                  step="0.01"
+                  min="0"
                 />
               </div>
-
+              
               <div class="form-group">
                 <label for="mensagem">Sua Mensagem:</label>
                 <textarea

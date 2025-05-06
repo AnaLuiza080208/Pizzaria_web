@@ -66,6 +66,14 @@ nav ul li a:hover::after {
   align-items: center;
 }
 
+.imagemPizza img,
+.imagemSobre img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
 .imagemPizza {
   width: 100%;
   height: 100%;
@@ -73,6 +81,8 @@ nav ul li a:hover::after {
   justify-content: center;
   align-items: center;
 }
+
+
 
 .imagemPizza img {
   width: 90%;
@@ -212,11 +222,60 @@ nav ul li a:hover::after {
   padding-right: 0px;
 }
 
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #eee;/*  */
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ffe55c;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.checkbox-group input[type="checkbox"]:checked {
+  background-color: #ffe55c;
+}
+
+.checkbox-group input[type="checkbox"]:checked::after {
+  content: "✓";
+  position: absolute;
+  color: #222;
+  font-size: 14px;
+  font-weight: bold;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #secao3 {
   position: relative;
   height: 100vh;
   overflow: hidden;
+  grid-column: 1 / -1; 
+  text-align: center;
+  margin-bottom: 1rem;
 }
+
 
 .imagemSobre {
   width: 100%;
@@ -231,8 +290,8 @@ nav ul li a:hover::after {
   height: 1000px;
   max-width: 800%;
   max-height: 500%;
+  object-fit: cover;
 }
-
 
 .texto-sobre-imagemSobre {
   position: absolute;
@@ -247,8 +306,7 @@ nav ul li a:hover::after {
   padding: 0;
 }
 
-
-.texto-sobre-imagemSobre > h1 {
+.texto-sobre-imagemSobre > h2 {
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -260,14 +318,20 @@ nav ul li a:hover::after {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
-
 .suggestion-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 500px;
   background: rgba(20, 20, 20, 0.85);
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 3;
 }
 
 .suggestion-form h3 {
